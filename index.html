@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .centered-text {
+      text-align: center;
+    }
+
+    .bolded {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body class='centered-text' style='background-image: url(wallpaper.png); color: #FFFFFF;'>
+  <h1 class='bolded'>Career Quiz</h1>
+  <p>Career: Computer Programer</p>
+  <p>ALL ANSWERS ARE IN LOWERCASE</p><br>
+  <font size='4'>
+    <form onsubmit='checkAnswers()'>
+<!--                           FILL IN THE BLANKS                            -->
+      <label class='bolded'>Fill in the Blanks:</label><br>
+      <label>Some items may not be used.</label><br>
+      <label>computer science || c++ || javascript || python || html</label><br><br>
+      <label>Computer programmers need a degree in</label><!--QUESTION 1-->
+      <input type='text' id='q1' name='q1'><label>.</label><br><output name='result1'></output> <br><br>
+      <label>One example of a language computer programmers should know is</label><input type='text' id='q2' name='q2'><label>.</label><br><output name='result2'></output> <br><br><br>
+      <!--                              TRUE OR FALSE                              -->
+      <label class='bolded'>True or False:</label><br>
+      <label>Knowledge of databases can be helpful.</label><br><!--QUESTION 3-->
+      <output name='result3'></output><br>
+      <input type='radio' id='q3' name='q3' value='true'>
+      <label for='q3'>True</label><br>
+      <input type='radio' id='q3.1' name='q3' value='false'>
+      <label for='q3.1'>False</label><br><br>
+      <label>A strong understanding of software development is NOT needed.</label><br><!--QUESTION 4-->
+      <output name='result4'></output><br>
+      <input type='radio' id='q4' name='q4' value='true'>
+      <label for='q4'>True</label><br>
+      <input type='radio' id='q4.1' name='q4' value='false'>
+      <label for='q4.1'>False</label><br><br>
+      <label>Employers usually look for people with previous experience.</label><br><!--QUESTION 5-->
+      <output name='result5'></output><br>
+      <input type='radio' id='q5' name='q5' value='true'>
+      <label for='q5'>True</label><br>
+      <input type='radio' id='q5.1' name='q5' value='false'>
+      <label for='q5.1'>False</label><br><br>
+      <label>Employers usually look for people with strong IT experience.</label><br><!--QUESTION 6-->
+      <output name='result6'></output><br>
+      <input type='radio' id='q6' name='q6' value='true'>
+      <label for='q6'>True</label><br>
+      <input type='radio' id='q6.1' name='q6' value='false'>
+      <label for='q6.1'>False</label><br><br>
+      <label>Employers usually require on-the-job training.</label><br><!--QUESTION 7-->
+      <output name='result7'></output><br>
+      <input type='radio' id='q7' name='q7' value='true'>
+      <label for='q7'>True</label><br>
+      <input type='radio' id='q7.1' name='q7' value='false'>
+      <label for='q7.1'>False</label><br><br>
+      <label>Programmers should NOT be certified in at least one programming language.</label><br><!--QUESTION 8-->
+      <output name='result8'></output><br>
+      <input type='radio' id='q8' name='q8' value='true'>
+      <label for='q8'>True</label><br>
+      <input type='radio' id='q8.1' name='q8' value='false'>
+      <label for='q8.1'>False</label><br><br><br>
+<!--                              SHORT ANSWER                              -->
+      <label class='bolded'>Short Answer:</label><br>
+      <label>How many years of experience are typically required for computer programmers?</label><br><!--QUESTION 9-->
+      <input type='number' id='q9' name='q9'> <output name='result9'></output> <br><br>
+      <label>What skills do computer programmers need?  List one.</label><br><!--QUESTION 10-->
+      <input type='text' id='q10' name='q10'> <output name='result10'></output> <br><br>
+      <output name='finalMark'></output><br>
+      <output name='finalPercent'></output><br>
+      <input type='submit' value='Submit Quiz' style='font-size:20px'>
+      <button onclick='window.location.reload()' style='font-size:15px'>Reset</button>
+    </form>
+  </font>
+  <script src="script.js"></script>
+</body>
+
+</html>
