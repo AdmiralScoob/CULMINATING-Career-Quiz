@@ -122,7 +122,7 @@ function checkAnswers() {
     } else {
       var result8 = 'Incorrect'
     }
-    if (questions[8].q9 == questions[8].a9) {
+    if (questions[8].q9 == questions[8].a9) 
       var result9 = 'Correct'
     } else {
       var result9 = 'Incorrect'
